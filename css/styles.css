@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+#modal {
+  display: none;
+}
+
+#modal .modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.9);
+  width: 100vw;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+#modal .modal-content {
+  text-align: center;
+  padding: 50px;
+  background: #fff;
+  border-radius: 20px;
+}
+
+#modal .modal-content p {
+  margin-bottom: 20px;
+}
+
+#modal .modal-content button {
+  border: none;
+  background: #4274df;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+#modal .modal-content button:hover {
+  cursor: pointer;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #232323;
+  font-size: 80px;
+  display: -ms-grid;
+  display: grid;
+  color: #232323;
+  font-size: 50px;
+  place-items: center;
+}
+
+.player1 {
+  background: url(/images/one.png);
+  background-size: cover;
+}
+
+.player2 {
+  background: url(/images/two.png);
+  background-size: cover;
+}
+
+.player3 {
+  background: url(/images/three.png);
+  background-size: cover;
+}
+
+.player4 {
+  background: url(/images/four.png);
+  background-size: cover;
+}
+
+.player5 {
+  background: url(/images/five.png);
+  background-size: cover;
+}
+/*# sourceMappingURL=styles.css.map */
